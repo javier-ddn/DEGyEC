@@ -2,10 +2,6 @@
 
 @import url(http://fonts.googleapis.com/css?family=Ruthie|Italianno);
 
-@font-face {
-	
-}
-
 html {
 	background: url("../img/bg.jpg") no-repeat center center fixed;
 	-webkit-background-size: cover;
@@ -15,6 +11,8 @@ html {
 }
 
 body {
+	font-family: 'Italianno', cursive;
+	font-size: 24px;
 	background: rgba(230, 230, 250, 0.4);
 	max-width: 800px;
 	margin: auto;
@@ -38,7 +36,7 @@ nav {
 
 nav>a {
 	background: rgb(120, 120, 140);
-	padding: 10px;
+	padding: 7px;
 	border-radius: 5px;
 	/*para Firefox*/
 	-moz-border-radius: 5px;
@@ -49,13 +47,12 @@ nav>a {
 	font-family: 'Ruthie', cursive;
 	font-style: normal;
 	font-weight: 300;
-	font-size: 26px;
+	font-size: 30px;
 	text-transform: none;
 	text-decoration: none;
 	letter-spacing: 0em;
 	word-spacing: 0em;
 	line-height: 1.4;
-	font-family: 'Ruthie', cursive;
 }
 
 nav>a:HOVER {
@@ -74,7 +71,7 @@ footer {
 	-o-background-size: cover;
 	background-size: cover;
 	height: 85px;
-	filter: alpha(opacity =   70);
+	filter: alpha(opacity = 70);
 	opacity: 0.7;
 }
 
@@ -85,7 +82,7 @@ footer {
 }
 
 .logo:HOVER {
-	filter: alpha(opacity =   80);
+	filter: alpha(opacity = 80);
 	opacity: .8;
 }
 
@@ -94,21 +91,71 @@ footer {
 }
 
 section {
-	display: inline-block;
-	width: 300px;
+	display: inline-table;
 	margin: 35px;
 	width: 300px;
 }
 
-section>article>img:HOVER {
-	filter: alpha(opacity =   20);
+article {
+	min-height: 300px;
+	}
+
+article>* {
+	max-width: 400px;
+}
+
+section>article {
+	width: 300px;
+}
+
+.img>img {
+	width: 300px;
+	-moz-box-shadow: -5px -5px 5px #888;
+	-webkit-box-shadow: -5px -5px 55px #888;
+	box-shadow: -5px -5px 45px #888;
+	-moz-box-shadow: -5px -5px 5px #888;
+	/*para Firefox*/
+	-moz-border-radius: 15px 15px 15px 15px;
+	/*para Safari y Chrome*/
+	-webkit-border-radius: 15px 15px 15px 15px;
+	/* para Opera */
+	border-radius: 5px 5px 5px 5px;
+}
+
+section>article>.img>img:HOVER {
+	filter: alpha(opacity = 20);
 	opacity: .2;
 }
 
-section>article:HOVER {
+section>article>.img:HOVER {
 	background: url("../img/section-hover.png") no-repeat center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+}
+
+section>header {
+	color: rgb(30, 30, 80);
+	font-weight: bold;
+	font-size: 30px;
+	text-shadow: rgb(0, 0, 30) 5px 2px 8px;
+}
+
+.horario {
+	font-style: italic;
+	text-decoration: underline;
+	color: rgb(40, 40, 50);
+}
+
+.centerAlign {
+	text-align: center;
+}
+
+.leftAlign {
+	text-align: left;
+}
+
+.autoMargin {
+	margin: auto auto;
 }

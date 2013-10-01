@@ -15,7 +15,34 @@
 			<a href="contact.html">Contacto</a> <a href="location.html">Localización</a>
 		</nav>
 	</header>
-	<article>Luis Vives - Leganés organiza:</article>
+	<article>
+		<div class="autoMargin">
+			E-Mail: ies.luisvives.leganes@educa.madrid.org <br />
+			<br />
+			<form action="#" autocomplete="on">
+				Consulta:<input type="radio" name="type" value="consult"
+					checked="checked"> Reserva:<input type="radio" name="type"
+					value="reserve"><br> Nombre:<input type="text"
+					name="fname" required="required" pattern="[A-Za-z^ ]+"><br>
+				Apellidos: <input type="text" name="lname" pattern="[A-Za-z^ ]+"><br>
+				E-mail: <input type="email" name="email" autocomplete="off"
+					required="required"><br>
+				<textarea name="text" rows="12" cols="55"></textarea>
+				<br> <select name="date">
+					<option value="7">7 Oct</option>
+					<option value="8">8 Oct</option>
+					<option value="9">9 Oct</option>
+					<option value="10">10 Oct</option>
+				</select> <select name="time">
+					<option value="9">9:30</option>
+					<option value="10">10:10</option>
+					<option value="12">12:10</option>
+					<option value="13">13:10</option>
+				</select> <br> <br> <input type="submit" value="Enviar"><input
+					type="reset" value="Reset">
+			</form>
+		</div>
+	</article>
 	<footer></footer>
 	<span class="copyr">Javier de Diego Navarro &copy;2013-2014</span>
 </body>
